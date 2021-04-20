@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable tubelight effects</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background: #07252d;
+        display: flex;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    h1 {
+        text-align: center;
+        color: #0e3742;
+        font-size: 80px;
+        position: relative;
+        text-transform: capitalize;
+        width: 100%;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #222);
+        line-height: 60px;
+        outline: none;
+        animation: lightup 5s linear infinite;
+    }
+    
+    @keyframes lightup {
+        0%,
+        18%,
+        20%,
+        50%,
+        50.1%,
+        60%,
+        65.5%,
+        80%,
+        90.15% {
+            color: #0e3742;
+        }
+        18.1%,
+        20.1%,
+        30%,
+        50%,
+        60.1%,
+        65%,
+        80.1%,
+        90%,
+        92.1%,
+        100% {
+            color: #fff;
+            text-shadow: 0 0 10px #03cbc4, 0 0 20px #03cbc4, 0 0 40px #03cbc4, 0 0 80px #03cbc4, 0 0 80px #03cbc4;
+        }
+    }
+</style>
+
+<body>
+    <h1 contenteditable="true">Hello there!</h1>
+
+</body>
+
+</html>
